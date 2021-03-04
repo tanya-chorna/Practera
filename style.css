@@ -59,14 +59,15 @@ ul {
     list-style: none; /* Remove default bullets */
   }
   
-ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #e3963e; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 4em; /* Also needed for space (tweak if needed) */
-    margin-left: -2em; /* Also needed for space (tweak if needed) */
+/*ul li::before { 
+    content: "\2022";    Add content: \2022 is the CSS Code/unicode for a bullet  
+    color: #e3963e;  Change the color 
+    font-weight: bold;   If you want it to be bold  
+    display: inline-block;   Needed to add space between the bullet and the text  
+    width: 4em;   Also needed for space (tweak if needed)  
+    margin-left: -2em;   Also needed for space (tweak if needed) 
   }
+*/
 
 .btn {
   background: #55c1db;
@@ -109,6 +110,14 @@ input:hover {
 
 input:focus {
   border: 1px solid #55c1db;
+}
+
+.dot {
+  height: .75em;
+  width: .75em;
+  background-color: #e3963e;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /*grid container*/
@@ -168,16 +177,20 @@ input:focus {
     text-align: center;
   }
 
-  .navbar ul {
+ .navbar ul {
+    list-style-type: none;
     margin: 1em;
     padding: 1em;
   }
 
+
   .navbar li {
     display: inline-block;
+    list-style-type: none;
     margin: 1em;
     text-align: center;
   }
+
 
   .navbar a {
     text-decoration: none;
