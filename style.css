@@ -256,23 +256,25 @@ main {
 
 /*about*/
 .about {
-  grid: main;
-  grid-column: 1;
   background: #f5f5f5;
   margin: 0px;
   text-align: left;
 }
 
 .aboutus {
-  display: inline-block;
-  grid-column: 1 / 3;
-  padding: 20px auto;
+  display: grid;
+  grid-column: 1 / span 2;
+  float: left;
+  width: 50%;
+  padding: 30px 10px;
 }
 
 .about-image {
   display: inline-block;
-  grid-column: 3 / span 2;
-  padding: 20px auto;
+  grid-column: -1 / span 2;
+  width: 45%;
+  text-align: end;
+  padding: 20px 10px;
   text-align: end;
 }
 
