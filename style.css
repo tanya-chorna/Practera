@@ -264,13 +264,12 @@ footer .logo{
   grid-column: 1 / span 1;
   text-align: left;
   float: left;
-  margin-top: 10px;
+  padding: 1em;
 }
 
 .copyright {
   grid-column: -2 / span 1;
   text-align: end;
-  margin-top: 10px;
   padding: 1em;
 }
 
