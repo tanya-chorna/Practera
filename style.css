@@ -124,7 +124,7 @@ input:focus {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(20px, auto);
     grid-template-areas:
       "hd hd hd hd"
       "nav nav nav nav"
@@ -166,8 +166,6 @@ input:focus {
     grid-column: 2 / span 2;
    } */
 
-
-
   
 /*style the navbar*/
 
@@ -183,14 +181,12 @@ input:focus {
     padding: 1em;
   }
 
-
   .navbar li {
     display: inline-block;
     list-style-type: none;
     margin: 1em;
     text-align: center;
   }
-
 
   .navbar a {
     text-decoration: none;
@@ -209,7 +205,73 @@ input:focus {
     color: #55c1db;
   }
 
-   /*Section A*/
+/*main*/
+main {
+  grid-area: main;
+  margin: 0;
+  padding: 0;
+}
+  
+/*platform*/
 
+.platform {
+  grid-column: 2 / span 2;
+  margin: 0px;
+  padding: 20px auto;
+}
+
+.about {
+  grid-column: 2 / span 2;
+  background: #f5f5f5;
+  margin: 0px;
+  padding: 20px auto;
+}
+
+.works {
+  grid-column: 2 / span 2;
+  margin: 0px;
+  padding: 20px auto;
+}
+
+.reviews {
+  grid-column: 2 / span 2;
+  background: #f5f5f5;
+  margin: 0px;
+  padding: 20px auto;
+}
+
+.contact {
+  grid-column: 2 / span 2;
+  margin: 0px;
+  padding: 20px auto;
+  padding-bottom: 20px;
+}
+
+
+.contact #headline {
+  padding: 0;
+  margin: 0;
+} 
+
+/*footer*/
+footer{
+  grid-area: ft;
+  background: #f5f5f5;
+  color:#303030;
+}
+
+footer .logo{
+  grid-column: 1 / span 1;
+  text-align: left;
+  float: left;
+  margin-top: 10px;
+}
+
+.copyright {
+  grid-column: -2 / span 1;
+  text-align: end;
+  margin-top: 10px;
+  padding: 1em;
+}
 
    /*media queries*/
