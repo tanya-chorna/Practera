@@ -71,9 +71,8 @@ ul {
 
 .btn {
   background: #55c1db;
-  color: #303030;
+  color: #fff;
   border: 1px solid #55c1db ;
-  border-radius: 5px;
   min-height: 1.5rem;
   font-weight: bold;
   font-size: 19px;
@@ -81,17 +80,15 @@ ul {
 }
 
 .btn:hover {
-  background: #55c1db;
-  color: #e3963e;
+  background: #e3963e;
+  color: #fff;
   border: 1px solid #e3963e;
-  border-radius: 5px;
 }
 
 .btn:active {
   background: #e3963e;
   color: #55c1db;
   border: 1px solid #e3963e;
-  border-radius: 5px;
 }
 
 input {
@@ -244,16 +241,17 @@ main {
 .platform img {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 245;
   opacity: .85;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
+/*
 .card {
   border: 1px solid #e3963e;
   border-radius: 5px;
-}
+}*/
 
 /*about*/
 .about {
