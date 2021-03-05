@@ -27,7 +27,7 @@ body {
     padding: 0;
     font-size: 16px;
     text-align: center;
-    color: #303030;
+    background: #303030;
 }
 
 h1 {
@@ -210,6 +210,7 @@ main {
   grid-area: main;
   margin: 0;
   padding: 0;
+  border: solid 1px green;
 }
   
 /*platform*/
@@ -228,16 +229,124 @@ main {
 }
 
 .works {
-  grid-column: 2 / span 2;
-  margin: 0px;
-  padding: 20px auto;
+ 
+  border: solid 1px red;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+#works-video
+{
+  
+  border: 1px solid violet;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#works-text
+{
+ 
+  text-align: left;
+  color: white;
+  border: 1px solid yellowgreen;
+}
+
+#works-text h4
+{
+  border: 1px solid green;
+  margin-top: 40px;
+  line-height: 100%;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  }
+
+
+#works-text ul {
+  list-style: inside;
+  border: 1px solid green;
+  padding-left: 0px;
+  margin-left: 40px;
 }
 
 .reviews {
-  grid-column: 2 / span 2;
   background: #f5f5f5;
-  margin: 0px;
-  padding: 20px auto;
+  border: solid 1px red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reviews body {font-family: Verdana, sans-serif;}
+.reviews .mySlides {display: none;}
+.reviews img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: solid 1px red;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 25px 0px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  border: solid 1px red;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  margin-left: 350px;
+  position: absolute;
+  top: 0;
+  border: solid 1px red;
+}
+
+/* The dots/bullets/indicators */
+.slidedot {
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
 
 .contact {
@@ -274,3 +383,30 @@ footer .logo{
 }
 
    /*media queries*/
+
+   @media (min-width: 700px) {
+    .works {
+ 
+      
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    
+    
+    #works-video
+    {
+      
+      
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    #works-text
+    {
+     
+      text-align: left;
+      color: white;
+      
+    }
+  
+  }
