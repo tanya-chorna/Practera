@@ -230,16 +230,15 @@ main {
 
 .works {
  
-  border: solid 1px red;
-  display: grid;
-  grid-template-columns: auto auto;
+  /* border: solid 1px red; */
+  
 }
 
 
 #works-video
 {
   
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -249,12 +248,12 @@ main {
  
   text-align: left;
   color: white;
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
 }
 
 #works-text h4
 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin-top: 40px;
   line-height: 100%;
   margin-left: 40px;
@@ -264,16 +263,17 @@ main {
 
 #works-text ul {
   list-style: inside;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding-left: 0px;
   margin-left: 40px;
 }
 
 .reviews {
   background: #f5f5f5;
-  border: solid 1px red;
-  margin-top: 10px;
+  /* border: solid 1px red; */
+  margin-top: 0px;
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .reviews body {font-family: Verdana, sans-serif;}
@@ -285,7 +285,7 @@ main {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 
 /* Caption text */
@@ -297,7 +297,7 @@ main {
   bottom: 10px;
   width: 100%;
   text-align: center;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 
 /* Number text (1/3 etc) */
@@ -308,7 +308,7 @@ main {
   margin-left: 350px;
   position: absolute;
   top: 0;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 
 /* The dots/bullets/indicators */
