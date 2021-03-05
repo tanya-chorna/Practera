@@ -71,9 +71,8 @@ ul {
 
 .btn {
   background: #55c1db;
-  color: #303030;
+  color: #fff;
   border: 1px solid #55c1db ;
-  border-radius: 5px;
   min-height: 1.5rem;
   font-weight: bold;
   font-size: 19px;
@@ -81,17 +80,15 @@ ul {
 }
 
 .btn:hover {
-  background: #55c1db;
-  color: #e3963e;
+  background: #e3963e;
+  color: #fff;
   border: 1px solid #e3963e;
-  border-radius: 5px;
 }
 
 .btn:active {
   background: #e3963e;
   color: #55c1db;
   border: 1px solid #e3963e;
-  border-radius: 5px;
 }
 
 input {
@@ -129,7 +126,7 @@ input:focus {
       "hd hd hd hd"
       "nav nav nav nav"
       "main main main main"
-      "ft ft ft ft";
+      "ft ft ft ft"; 
   }
 
 /*header */
@@ -137,6 +134,7 @@ input:focus {
     grid-area: hd;
     margin: 0;
     padding: 0;
+    padding-bottom: 1em;
     background: #f5f5f5;
   }
 
@@ -153,7 +151,6 @@ input:focus {
     padding: 0; 
  
    }
-
 
  .headline {
      /*grid-column: 2 / span 2;
@@ -217,29 +214,193 @@ main {
 .platform {
   grid-column: 2 / span 2;
   margin: 0px;
-  padding: 20px auto;
+  padding: 2em 1em 1em;
 }
 
+.platform ul{
+  grid-column: 2/4;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.platform li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  width: 31%
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+.platform img {
+  display: block;
+  width: 100%;
+  height: 245;
+  opacity: .85;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*
+.card {
+  border: 1px solid #e3963e;
+  border-radius: 5px;
+}*/
+
+/*about section*/
 .about {
   grid-column: 2 / span 2;
   background: #f5f5f5;
   margin: 0px;
-  padding: 20px auto;
+  text-align: left;
+  width: 100%;
 }
 
-.works {
-  grid-column: 2 / span 2;
-  margin: 0px;
-  padding: 20px auto;
+.aboutus {
+  display: grid;
+  grid-column: 1 / span 2;
+  float: left;
+  width: 50%;
+  padding: 30px 10px;
 }
 
+.about-image {
+  display: inline-block;
+  grid-column: -1 / span 2;
+  width: 45%;
+  max-width: 400px;
+  text-align: end;
+  padding: 20px 10px;
+  text-align: end;
+}
+
+/*Works Section*/
+/*.works {
+   border: solid 1px red; 
+}*/ 
+
+
+#works-video
+{
+  /* border: 1px solid violet; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#works-text
+{
+ 
+  text-align: left;
+  color: white;
+  /* border: 1px solid yellowgreen; */
+}
+
+#works-text h4
+{
+  /* border: 1px solid green; */
+  margin-top: 40px;
+  line-height: 100%;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  }
+
+
+#works-text ul {
+  list-style: inside;
+  /* border: 1px solid green; */
+  padding-left: 0px;
+  margin-left: 40px;
+}
+
+/*Reviews Section with Carousel*/
 .reviews {
-  grid-column: 2 / span 2;
   background: #f5f5f5;
-  margin: 0px;
-  padding: 20px auto;
+  /* border: solid 1px red; */
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
+.reviews body {font-family: Verdana, sans-serif;}
+.reviews .mySlides {display: none;}
+.reviews img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  /* border: solid 1px red; */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 25px 0px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  /* border: solid 1px red; */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  margin-left: 350px;
+  position: absolute;
+  top: 0;
+  /* border: solid 1px red; */
+}
+
+/* The dots/bullets/indicators */
+.slidedot {
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*CONTACT Section*/
 .contact {
   grid-column: 2 / span 2;
   margin: 0px;
@@ -274,3 +435,31 @@ footer .logo{
 }
 
    /*media queries*/
+   /*media queries*/
+
+   @media (min-width: 700px) {
+    .works {
+ 
+      
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    
+    
+    #works-video
+    {
+      
+      
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    #works-text
+    {
+     
+      text-align: left;
+      color: white;
+      
+    }
+  
+  }
