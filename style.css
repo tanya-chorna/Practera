@@ -71,9 +71,8 @@ ul {
 
 .btn {
   background: #55c1db;
-  color: #303030;
+  color: #fff;
   border: 1px solid #55c1db ;
-  border-radius: 5px;
   min-height: 1.5rem;
   font-weight: bold;
   font-size: 19px;
@@ -81,17 +80,15 @@ ul {
 }
 
 .btn:hover {
-  background: #55c1db;
-  color: #e3963e;
+  background: #e3963e;
+  color: #fff;
   border: 1px solid #e3963e;
-  border-radius: 5px;
 }
 
 .btn:active {
   background: #e3963e;
   color: #55c1db;
   border: 1px solid #e3963e;
-  border-radius: 5px;
 }
 
 input {
@@ -129,7 +126,7 @@ input:focus {
       "hd hd hd hd"
       "nav nav nav nav"
       "main main main main"
-      "ft ft ft ft";
+      "ft ft ft ft"; 
   }
 
 /*header */
@@ -137,6 +134,7 @@ input:focus {
     grid-area: hd;
     margin: 0;
     padding: 0;
+    padding-bottom: 1em;
     background: #f5f5f5;
   }
 
@@ -153,7 +151,6 @@ input:focus {
     padding: 0; 
  
    }
-
 
  .headline {
      /*grid-column: 2 / span 2;
@@ -185,6 +182,7 @@ input:focus {
     display: inline-block;
     list-style-type: none;
     margin: 1em;
+    padding-bottom: 1em;
     text-align: center;
   }
 
@@ -218,15 +216,54 @@ main {
 .platform {
   grid-column: 2 / span 2;
   margin: 0px;
-  padding: 20px auto;
+  padding: 2em 1em 1em;
 }
 
+.platform ul{
+  grid-column: 2/4;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.platform li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  width: 31%
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+.platform img {
+  display: block;
+  width: 100%;
+  height: 245;
+  opacity: .85;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*
+.card {
+  border: 1px solid #e3963e;
+  border-radius: 5px;
+}*/
+
+/*about section*/
 .about {
   grid-column: 2 / span 2;
   background: #f5f5f5;
   margin: 0px;
-  padding: 20px auto;
+  text-align: left;
+  width: 90%;
 }
+
 
 .works {
  
@@ -266,8 +303,39 @@ main {
   /* border: 1px solid green; */
   padding-left: 0px;
   margin-left: 40px;
+
+  
+  
+.aboutus {
+  grid-column: 1 / span 2;
+  float: left;
+  width: 50%;
+  padding: 30px 10px;
+  margin-left: 1em;
 }
 
+.about-image {
+  display: inline-block;
+  grid-column: -1 / span 2;
+  width: 45%;
+  max-width: 400px;
+  text-align: end;
+  padding: 20px 10px;
+  text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Reviews Section with Carousel*/
 .reviews {
   background: #f5f5f5;
   /* border: solid 1px red; */
@@ -332,6 +400,7 @@ main {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+
 }
 
 @-webkit-keyframes fade {
@@ -349,6 +418,7 @@ main {
   .text {font-size: 11px}
 }
 
+/*CONTACT Section*/
 .contact {
   grid-column: 2 / span 2;
   margin: 0px;
@@ -383,6 +453,7 @@ footer .logo{
 }
 
    /*media queries*/
+
 
    @media (min-width: 700px) {
     .works {
