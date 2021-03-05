@@ -296,9 +296,8 @@ main {
 
 #works-text
 {
- 
   text-align: left;
-  color: white;
+  color: #303030;
   /* border: 1px solid yellowgreen; */
 }
 
@@ -309,14 +308,29 @@ main {
   line-height: 100%;
   margin-left: 40px;
   margin-bottom: 10px;
+  color: #303030
   }
 
+#works-text p {
+  color: #303030;
+  margin-left: 40px;
+}
 
 #works-text ul {
-  list-style: inside;
+  list-style: none;
   /* border: 1px solid green; */
   padding-left: 0px;
   margin-left: 40px;
+  color: #303030;
+}
+
+#works-text ul li::before { 
+  content: "\2022";   /* Add content: \2022 is the CSS Code/unicode for a bullet  */
+  color: #e3963e;  /*Change the color */
+  font-weight: bold;   /*If you want it to be bold */ 
+  display: inline-block;   /*Needed to add space between the bullet and the text  */
+  width: 1em;   /*Also needed for space (tweak if needed)  */
+  margin-left: 1em;  /*Also needed for space (tweak if needed) */
 }
 
 /*Reviews Section with Carousel*/
