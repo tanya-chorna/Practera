@@ -27,7 +27,7 @@ body {
     padding: 0;
     font-size: 16px;
     text-align: center;
-    background: #303030;
+    color: #303030;
 }
 
 h1 {
@@ -208,7 +208,6 @@ main {
   grid-area: main;
   margin: 0;
   padding: 0;
-  border: solid 1px green;
 }
   
 /*platform*/
@@ -264,17 +263,32 @@ main {
   width: 90%;
 }
 
-
-.works {
- 
-  /* border: solid 1px red; */
-  
+.aboutus {
+  grid-column: 1 / span 2;
+  float: left;
+  width: 50%;
+  padding: 30px 10px;
+  margin-left: 1em;
 }
+
+.about-image {
+  display: inline-block;
+  grid-column: -1 / span 2;
+  width: 45%;
+  max-width: 400px;
+  text-align: end;
+  padding: 20px 10px;
+  text-align: end;
+}
+
+/*Works Section*/
+/*.works {
+   border: solid 1px red; 
+}*/ 
 
 
 #works-video
 {
-  
   /* border: 1px solid violet; */
   margin-top: 10px;
   margin-bottom: 10px;
@@ -303,37 +317,7 @@ main {
   /* border: 1px solid green; */
   padding-left: 0px;
   margin-left: 40px;
-
-  
-  
-.aboutus {
-  grid-column: 1 / span 2;
-  float: left;
-  width: 50%;
-  padding: 30px 10px;
-  margin-left: 1em;
 }
-
-.about-image {
-  display: inline-block;
-  grid-column: -1 / span 2;
-  width: 45%;
-  max-width: 400px;
-  text-align: end;
-  padding: 20px 10px;
-  text-align: end;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /*Reviews Section with Carousel*/
 .reviews {
@@ -400,7 +384,6 @@ main {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-
 }
 
 @-webkit-keyframes fade {
@@ -453,7 +436,7 @@ footer .logo{
 }
 
    /*media queries*/
-
+   /*media queries*/
 
    @media (min-width: 700px) {
     .works {
