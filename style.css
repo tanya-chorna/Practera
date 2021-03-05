@@ -256,42 +256,58 @@ main {
 
 /*about section*/
 .about {
-  grid-column: 2 / span 2;
-  background: #f5f5f5;
-  margin: 0px;
+  /* border: solid 1px red;  */
+  padding: 10px;
+}
+
+#aboutus {
   text-align: left;
-  width: 90%;
+  color: white;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  background: #f5f5f5;
 }
 
-.aboutus {
-  grid-column: 1 / span 2;
-  float: left;
-  width: 50%;
-  padding: 30px 10px;
-  margin-left: 1em;
+#aboutus p{
+  text-align: left;
+  color: #303030;
+  /* border: 1px solid yellowgreen; */
 }
 
-.about-image {
-  display: inline-block;
-  grid-column: -1 / span 2;
-  width: 45%;
-  max-width: 400px;
-  text-align: end;
-  padding: 20px 10px;
-  text-align: end;
+#aboutus h3{
+  /* border: 1px solid green;  */
+  color: #303030;
+  }
+
+
+#aboutus h4{
+  /* border: 1px solid green;  */
+  color: #303030;
+  }
+
+#about-image img{
+  /* border: 1px solid violet;  */
+  width: 100%;
+    height: auto;
+    
+  
 }
 
 /*Works Section*/
-/*.works {
-   border: solid 1px red; 
-}*/ 
+.works {
+   /* border: solid 1px red;  */
+   padding: 10px;
+   
+   
+}
 
 
 #works-video
 {
-  /* border: 1px solid violet; */
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* border: 1px solid violet;  */
+  
+  
 }
 
 #works-text
@@ -299,47 +315,46 @@ main {
   text-align: left;
   color: #303030;
   /* border: 1px solid yellowgreen; */
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 
 #works-text h4
 {
-  /* border: 1px solid green; */
-  margin-top: 40px;
-  line-height: 100%;
-  margin-left: 40px;
-  margin-bottom: 10px;
+  /* border: 1px solid green;  */
+ 
   color: #303030
   }
 
 #works-text p {
   color: #303030;
-  margin-left: 40px;
+  
+  /* border: 1px solid green; */
 }
 
 #works-text ul {
-  list-style: none;
+  
   /* border: 1px solid green; */
   padding-left: 0px;
-  margin-left: 40px;
-  color: #303030;
+  
 }
 
-#works-text ul li::before { 
-  content: "\2022";   /* Add content: \2022 is the CSS Code/unicode for a bullet  */
-  color: #e3963e;  /*Change the color */
-  font-weight: bold;   /*If you want it to be bold */ 
-  display: inline-block;   /*Needed to add space between the bullet and the text  */
-  width: 1em;   /*Also needed for space (tweak if needed)  */
-  margin-left: 1em;  /*Also needed for space (tweak if needed) */
+#works-text li{ 
+  /* border: 1px solid green; */
+  list-style-type: disc;
+  color: #303030;
+  list-style-position: inside;
+  
 }
 
 /*Reviews Section with Carousel*/
 .reviews {
   background: #f5f5f5;
   /* border: solid 1px red; */
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px;
+  
+
 }
 
 .reviews body {font-family: Verdana, sans-serif;}
@@ -349,6 +364,7 @@ main {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+ 
   position: relative;
   margin: auto;
   /* border: solid 1px red; */
@@ -371,7 +387,8 @@ main {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
-  margin-left: 350px;
+  
+  margin-left: 40px;
   position: absolute;
   top: 0;
   /* border: solid 1px red; */
@@ -455,26 +472,53 @@ footer .logo{
    @media (min-width: 700px) {
     .works {
  
-      
       display: grid;
       grid-template-columns: auto auto;
+      padding: 40px;
     }
     
     
     #works-video
     {
       
-      
-      margin-top: 10px;
-      margin-bottom: 10px;
+      min-width: 700px;
+      padding-left: 40px;
     }
-    
     #works-text
     {
-     
-      text-align: left;
-      color: white;
-      
-    }
+    padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.reviews {
+  background: #f5f5f5;
+  /* border: solid 1px red; */
+  padding: 30px;
+  }
+
+  .about {
+ 
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    /* border: solid 1px red;  */
+  }
   
+  
+  #about-image img
+  {
+    /* border: solid 1px red;  */
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #aboutus
+  {
+  padding-left: 40px;
+padding-top: 40px;
+padding-right: 40px;
+/* border: solid 1px red;  */
+}
+
+
   }
