@@ -22,12 +22,13 @@ For highlights, accents, diagrams
 /*Core Attributes*/
 body {
   font-family: Roboto, Helvetica, sans-serif;
-  text-align: center;
+  /*text-align: center;*/
   margin: 0;
   padding: 0;
   font-size: 16px;
-  text-align: center;
+  /*text-align: center;*/
   color: #303030;
+ /* background: #f5f5f5;*/
 }
 
 h1 {
@@ -127,23 +128,33 @@ display: inline-block;
 
 /*header */
 header {
-  grid-area: hd;
+  /*grid-area: hd;*/
   margin: 0;
-  padding: 0;
+  padding: 275px 1vw;
   padding-bottom: 1em;
-  background: #f5f5f5;
+  background-image: url(/images/practera_working.jpg);
+  background-color:  #f5f5f5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  justify-self:stretch;
+  width:100%;
+
 }
 
 .logo{
-  grid-column: 2 / span2;
-  height: 25%;
-  width: auto;
+  /*grid-column: 2 / span2;*/
+  height: 100%;
+  /*width: auto;*/
 }
 
 #logo-image{
-  max-width: 200px;
-  text-align: center;
+  text-align: start;
+  text-justify: start;
+  max-width: 55%;
   margin: 0;
+  margin-top: -750px;
   padding: 0; 
 
  }
@@ -153,6 +164,9 @@ header {
   text-align: center;*/
   margin: 0;
   padding: 0;
+  color: #f5f5f5;
+  line-height: 1em;
+  text-shadow: 2px 2px 8px #000;
 }
 
 /*.form-inline { 
