@@ -217,14 +217,15 @@ header {
 
 .platform {
 /* border: 1px solid green;   */
-background: #f5f5f5;
+background: white;
+
 }
 
 #card{
-
-border: solid 1px black;  
+/* border: solid 1px black;   */
 margin: 20px;
-padding: 20px;
+padding: 20px;background: #f5f5f5;
+
 } 
 
 
@@ -244,16 +245,16 @@ padding: 20px;
 .about {
 /* border: solid 1px red;   */
 padding: 10px;
-
+background: #f5f5f5;
 }
 
 #aboutus {
-text-align: left;
-color: white;
+
+
 padding-right: 5px;
 padding-left: 5px;
 padding-top: 5px;
-background: #f5f5f5;
+
 /* border: 1px solid green;   */
 }
 
@@ -283,12 +284,24 @@ width: 100%;
 
 }
 
+.about1 {
+  /* border: solid 1px red;   */
+  padding: 10px;
+   background: #f5f5f5;
+  }
+
+.about2 {
+  /* border: solid 1px red;   */
+  padding: 10px;
+  background: white;
+  }
+
 /*Works Section*/
 .works {
   /* border: solid 1px red;  */
  padding: 10px;
  
- 
+ background: white;
 }
 
 
@@ -344,11 +357,33 @@ background: #f5f5f5;
  padding: 30px;
 
 }
+
+.reviews #card{
+   /* border: solid 1px black;   */
+  
+  padding: 30px;
+  background:white;
+  
+  } 
+
+  .reviews img {
+    
+    /* border: solid 1px black;   */
+   
+  }
+ 
+
+  .reviews p {
+    min-height: 100px;
+    /* border: solid 1px black;   */
+    padding: 10px;
+  }
+
 .reviews .mySlides {display: none;}
 
 /* Slideshow container */
 .slideshow-container {
-max-width: 500px;
+max-width: 600px;
 
 position: relative;
 margin: auto;
@@ -359,7 +394,7 @@ margin: auto;
 .reviews #card{
 
 
-margin-bottom: 5px;
+margin-bottom: 15px;
 
 } 
 
@@ -367,14 +402,14 @@ margin-bottom: 5px;
 
 /* The dots/bullets/indicators */
 .slidedot {
-height: 15px;
-width: 15px;
+height: 5px;
+width: 5px;
 margin: 5px;
 
 background-color: #bbb;
 border-radius: 50%;
 display: inline-block;
-transition: background-color 0.6s ease;
+transition: background-color 2s ease;
   }
 
 .active {
@@ -384,9 +419,9 @@ background-color: #717171;
 /* Fading animation */
 .fade {
 -webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
+-webkit-animation-duration: 2s;
 animation-name: fade;
-animation-duration: 1.5s;
+animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
