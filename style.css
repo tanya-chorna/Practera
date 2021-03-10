@@ -269,9 +269,8 @@ main {
 
 /*about section*/
 .about {
-  border: solid 1px red;  
+  /* border: solid 1px red;  */
   padding: 10px;
-  
 }
 
 #aboutus {
@@ -281,36 +280,36 @@ main {
   padding-left: 5px;
   padding-top: 5px;
   background: #f5f5f5;
-  border: 1px solid green;  
 }
 
 #aboutus p{
   text-align: left;
   color: #303030;
-   border: 1px solid yellowgreen; 
+  /* border: 1px solid yellowgreen; */
 }
 
 #aboutus h3{
-  border: 1px solid green;  
+  /* border: 1px solid green;  */
   color: #303030;
   }
 
 
 #aboutus h4{
-   border: 1px solid green;  
+  /* border: 1px solid green;  */
   color: #303030;
   }
 
 #about-image img{
-  border: 1px solid violet;  
- 
+  /* border: 1px solid violet;  */
+  width: 100%;
+    height: auto;
     
   
 }
 
 /*Works Section*/
 .works {
-    border: solid 1px red; 
+   /* border: solid 1px red;  */
    padding: 10px;
    
    
@@ -319,7 +318,7 @@ main {
 
 #works-video
 {
- border: 1px solid violet;  
+  /* border: 1px solid violet;  */
   
   
 }
@@ -328,7 +327,7 @@ main {
 {
   text-align: left;
   color: #303030;
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
   padding-left: 5px;
   padding-top: 5px;
   padding-right: 5px;
@@ -336,7 +335,7 @@ main {
 
 #works-text h4
 {
- border: 1px solid green; 
+  /* border: 1px solid green;  */
  
   color: #303030
   }
@@ -344,18 +343,18 @@ main {
 #works-text p {
   color: #303030;
   
-   border: 1px solid green; 
+  /* border: 1px solid green; */
 }
 
 #works-text ul {
   
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding-left: 0px;
   
 }
 
 #works-text li{ 
-   border: 1px solid green; 
+  /* border: 1px solid green; */
   list-style-type: disc;
   color: #303030;
   list-style-position: inside;
@@ -396,6 +395,17 @@ main {
   /* border: solid 1px red; */
 }
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  
+  margin-left: 40px;
+  position: absolute;
+  top: 0;
+  /* border: solid 1px red; */
+}
 
 /* The dots/bullets/indicators */
 .slidedot {
@@ -472,11 +482,11 @@ footer .logo{
    /*media queries*/
    /*media queries*/
 
-   @media (min-width: 600px) {
+   @media (min-width: 700px) {
     .works {
  
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: auto auto;
       padding: 40px;
     }
     
@@ -484,7 +494,8 @@ footer .logo{
     #works-video
     {
       
-     
+      min-width: 700px;
+      padding-left: 40px;
     }
     #works-text
     {
@@ -495,32 +506,31 @@ footer .logo{
 
 .reviews {
   background: #f5f5f5;
-  
+  /* border: solid 1px red; */
   padding: 30px;
   }
 
   .about {
  
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     padding: 40px;
-   
+    /* border: solid 1px red;  */
   }
   
   
   #about-image img
   {
-    
-    width: 100%;
-    height: auto;
-    
+    /* border: solid 1px red;  */
+    padding-left: 40px;
+    padding-right: 40px;
   }
   #aboutus
   {
   padding-left: 40px;
 padding-top: 40px;
 padding-right: 40px;
-
+/* border: solid 1px red;  */
 }
 
 
