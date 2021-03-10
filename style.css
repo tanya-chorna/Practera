@@ -50,11 +50,6 @@ h4 {
   font-size: 26px;
 }
 
-h5 {
-  font-weight: normal;
-  font-size: 20px;
-}
-
 p {
   font-weight: normal;
   font-size: 16px;
@@ -75,9 +70,9 @@ ul {
 */
 
 .btn {
-  background: #55c1db;
+  background: #e3963e;
   color: #fff;
-  border: 1px solid #55c1db ;
+  border: 1px solid #e3963e ;
   min-height: 1.5rem;
   font-weight: bold;
   font-size: 19px;
@@ -123,7 +118,16 @@ input:focus {
 }
 
 /*grid container*/
-  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+      "hd hd hd hd"
+      /*"nav nav nav nav"*/
+      "main main main main"
+      "ft ft ft ft"; 
+  }
 
 /*header */
   header {
@@ -131,7 +135,12 @@ input:focus {
     margin: 0;
     padding: 0;
     padding-bottom: 1em;
+    margin-left: 2em;
     background: #f5f5f5;
+    background-image: url(/images/practera_working.jpg);
+    background-repeat: no-repeat;
+    min-height: 600px;
+    color: white !important; 
   }
 
   .logo{
@@ -153,6 +162,8 @@ input:focus {
     text-align: center;*/
     margin: 0;
     padding: 0;
+    text-shadow:  3px 2px #303030;
+    color: white !important;
   }
 
   /*.form-inline { 
@@ -163,15 +174,19 @@ input:focus {
 /*style the navbar*/
 
   .navbar {
-    grid-area: nav;
+    grid-area: hd;
     grid-column: 1 / span 5;
     text-align: center;
+    margin-top: -10em;
+    text-shadow:  3px 2px #303030;
+    color: white !important;
   }
 
  .navbar ul {
     list-style-type: none;
     margin: 1em;
     padding: 1em;
+    color: white !important;
   }
 
   .navbar li {
@@ -180,11 +195,12 @@ input:focus {
     margin: 1em;
     padding-bottom: 1em;
     text-align: center;
+    color: white !important;
   }
 
   .navbar a {
     text-decoration: none;
-    color: #303030;
+    color: white !important;
     font-size: 18px;
     font-weight: bold;
   }
@@ -200,37 +216,61 @@ input:focus {
   }
 
 /*main*/
-
-.platform {
-  /* border: 1px solid green;   */
+main {
+  grid-area: main;
+  margin: 0;
+  padding: 0;
   
 }
+  
+/*platform*/
 
-#card{
- 
-  border: solid 1px black;  
-  margin: 20px;
-  padding: 20px;
-} 
+.platform {
+  grid-column: 2 / span 2;
+  margin: 0px;
+  padding: 2em 1em 1em;
+}
 
+.platform ul{
+  grid-column: 2/4;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
 
-#card img
-  {
-    /* border: solid 1px red; */
-    width: 100%;
-    height: auto;
-    
-  }
+.platform li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  width: 31%
+}
 
-  #card h4 {
-    font-weight: bold;
-  }
+.card-content {
+  padding: 1.5em;
+}
+
+.platform img {
+  display: block;
+  width: 100%;
+  height: 245;
+  opacity: .85;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*
+.card {
+  border: 1px solid #e3963e;
+  border-radius: 5px;
+}*/
 
 /*about section*/
 .about {
-  /* border: solid 1px red;   */
+  /* border: solid 1px red;  */
   padding: 10px;
-  
 }
 
 #aboutus {
@@ -240,29 +280,27 @@ input:focus {
   padding-left: 5px;
   padding-top: 5px;
   background: #f5f5f5;
-  /* border: 1px solid green;   */
 }
 
 #aboutus p{
   text-align: left;
   color: #303030;
-   /* border: 1px solid yellowgreen;  */
+  /* border: 1px solid yellowgreen; */
 }
 
 #aboutus h3{
-  /* border: 1px solid green;   */
+  /* border: 1px solid green;  */
   color: #303030;
   }
 
 
 #aboutus h4{
-   /* border: 1px solid green;   */
+  /* border: 1px solid green;  */
   color: #303030;
   }
 
 #about-image img{
-  /* border: 1px solid violet;   */
- 
+  /* border: 1px solid violet;  */
   width: 100%;
     height: auto;
     
@@ -271,7 +309,7 @@ input:focus {
 
 /*Works Section*/
 .works {
-    /* border: solid 1px red;  */
+   /* border: solid 1px red;  */
    padding: 10px;
    
    
@@ -280,7 +318,7 @@ input:focus {
 
 #works-video
 {
- /* border: 1px solid violet;   */
+  /* border: 1px solid violet;  */
   
   
 }
@@ -297,7 +335,7 @@ input:focus {
 
 #works-text h4
 {
- /* border: 1px solid green;  */
+  /* border: 1px solid green;  */
  
   color: #303030
   }
@@ -305,7 +343,7 @@ input:focus {
 #works-text p {
   color: #303030;
   
-   /* border: 1px solid green;  */
+  /* border: 1px solid green; */
 }
 
 #works-text ul {
@@ -316,7 +354,7 @@ input:focus {
 }
 
 #works-text li{ 
-   /* border: 1px solid green;  */
+  /* border: 1px solid green; */
   list-style-type: disc;
   color: #303030;
   list-style-position: inside;
@@ -326,48 +364,59 @@ input:focus {
 /*Reviews Section with Carousel*/
 .reviews {
   background: #f5f5f5;
-   /* border: solid 1px red;  */
-   padding: 30px;
-  
-
+  /* border: solid 1px red; */
+  padding: 10px;
   
 
 }
 
-
+.reviews body {font-family: Verdana, sans-serif;}
 .reviews .mySlides {display: none;}
-
+.reviews img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 1000px;
  
   position: relative;
   margin: auto;
-  
- /* border: solid 1px red;  */
+  /* border: solid 1px red; */
 }
 
-.reviews #card{
- 
-  
-  margin-bottom: 5px;
-  
-} 
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 25px 0px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  /* border: solid 1px red; */
+}
 
-
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  
+  margin-left: 40px;
+  position: absolute;
+  top: 0;
+  /* border: solid 1px red; */
+}
 
 /* The dots/bullets/indicators */
 .slidedot {
   height: 15px;
   width: 15px;
   margin: 5px;
- 
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-    }
+  }
 
 .active {
   background-color: #717171;
@@ -433,11 +482,11 @@ footer .logo{
    /*media queries*/
    /*media queries*/
 
-   @media (min-width: 600px) {
+   @media (min-width: 700px) {
     .works {
  
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: auto auto;
       padding: 40px;
     }
     
@@ -445,7 +494,8 @@ footer .logo{
     #works-video
     {
       
-     
+      min-width: 700px;
+      padding-left: 40px;
     }
     #works-text
     {
@@ -456,48 +506,32 @@ footer .logo{
 
 .reviews {
   background: #f5f5f5;
-  
-  
+  /* border: solid 1px red; */
+  padding: 30px;
   }
 
   .about {
  
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     padding: 40px;
-   
+    /* border: solid 1px red;  */
   }
   
   
   #about-image img
   {
-    
-    width: 100%;
-    height: auto;
-    
+    /* border: solid 1px red;  */
+    padding-left: 40px;
+    padding-right: 40px;
   }
   #aboutus
   {
   padding-left: 40px;
 padding-top: 40px;
 padding-right: 40px;
-
+/* border: solid 1px red;  */
 }
 
-.platform {
- 
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  padding: 40px;
- 
-}
-
-#card img
-  {
-    
-    width: 100%;
-    height: auto;
-    
-  }
 
   }
