@@ -47,12 +47,13 @@ h3 {
 h4 {
   font-weight: normal;
   font-size: 22px;
+  line-height: 23px;
 }
 
 p {
   font-weight: normal;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21px;
   /* border: solid 1px red;    */
 }
 
@@ -73,8 +74,12 @@ strong {
 }
 
 #intro-text strong {
-  font-size: 22px;
+  font-size: 24px;
   color: #e3963e;
+}
+
+#intro-text h4 {
+  line-height: 25px;
 }
 
 #about-text strong {
@@ -85,6 +90,14 @@ strong {
 #works-text strong {
   font-size: 22px;
   color: #e3963e;
+}
+
+#about-text h4 {
+  font-size: 20px;
+}
+
+#works-text h4 {
+  font-size: 20px;
 }
  
 /*ul li::before { 
@@ -299,11 +312,6 @@ background: #f5f5f5;
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
 /*CONTACT Section*/
 .contact {
   background: #f5f5f5;
@@ -356,16 +364,21 @@ input[type=submit]:hover {
 }
 
 /*media queries*/
-@media (min-width: 600px) {
+@media (min-width: 769px) {
 
   h4 {
     font-weight: normal;
     font-size: 26px;
+    line-height: 29px;
   }
 
   #intro-text strong {
-    font-size: 26px;
+    font-size: 28px;
     color: #e3963e;
+  }
+
+  #intro-text h4 {
+    line-height: 29px;
   }
   
   #about-text strong {
@@ -374,8 +387,16 @@ input[type=submit]:hover {
   }
   
   #works-text strong {
-    font-size: 28px;
+    font-size: 26px;
     color: #e3963e;
+  }
+
+  #about-text h4 {
+    font-size: 24px;
+  }
+  
+  #works-text h4 {
+    font-size: 24px;
   }
 
   header {
@@ -406,22 +427,29 @@ input[type=submit]:hover {
     text-align: left;
     margin-left: 20px;
     margin-right: 20px;
+    /* border: solid 1px red;   */
+  }
+
+  #about-image {
+    display: flex;
+    align-items: center;
   }
 
   .works {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
+    min-height: 400px;
+    /* border: solid 1px red;   */
   }
-    
-  #works-video {
-  }
-
+  
+  
   #works-text {
     display: flex;
     align-items: center; 
     text-align: left;
-    margin-left: 20px;
+    margin-left: 5px; 
+    /* border: solid 1px green;  */
   }
 
   .reviews {
