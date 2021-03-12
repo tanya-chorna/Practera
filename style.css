@@ -1,24 +1,3 @@
-
-/*font sizes converted to 1.3 pixels for every 1pt*/
-
-/* color palette
-Primary color palette
-Brand color - #55c1db
-Font colour - #303030
-Accent color - #e3963e
-Background color (when required)- #f5f5f5
-
-Secondary color palette 
-For highlights, accents, diagrams
-#d8eaf0
-#0a8398
-#949cca
-#f9eece
-#f7d595
-#e1926f
-*/
-
-
 /*Core Attributes*/
 body {
   font-family: Roboto, Helvetica, sans-serif;
@@ -55,7 +34,6 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
-  /* border: solid 1px red;    */
 }
 
 a {
@@ -64,10 +42,6 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-
-/* ul { */
-  /* list-style: none;  */
-/* } */
 
 strong {
   font-size: 19px;
@@ -114,16 +88,6 @@ strong {
 .contact h4 {
   font-size: 20px;
 }
- 
-/*ul li::before { 
-  content: "\2022";    Add content: \2022 is the CSS Code/unicode for a bullet  
-  color: #e3963e;  Change the color 
-  font-weight: bold;   If you want it to be bold  
-  display: inline-block;   Needed to add space between the bullet and the text  
-  width: 4em;   Also needed for space (tweak if needed)  
-  margin-left: -2em;   Also needed for space (tweak if needed) 
-}
-*/
 
 /*header */
 header {
@@ -148,67 +112,24 @@ header {
   text-shadow: 2px 2px 8px #000;
 }
 
-/*style the navbar*/
-
-/* .navbar { */
-  /* grid-area: nav; */
-  /* grid-column: 1 / span 5; */
-  /* text-align: center; */
-/* } */
-
-/* .navbar ul { */
-  /* list-style-type: none; */
-  /* margin: 1em; */
-  /* padding: 1em; */
-/* } */
-
-/* .navbar li { */
-  /* display: inline-block; */
-  /* list-style-type: none; */
-  /* margin: 1em; */
-  /* padding-bottom: 1em; */
-  /* text-align: center; */
-/* } */
-
-/* .navbar a { */
-  /* text-decoration: none; */
-  /* color: #303030; */
-  /* font-size: 18px; */
-  /* font-weight: bold; */
-/* } */
-
-/* .navbar a:hover { */
-  /* text-decoration: underline; */
-  /* color: #e3963e; */
-/* } */
-
-/* .navbar a:focus { */
-  /* text-decoration: underline; */
-  /* color: #55c1db; */
-/* } */
-
 /*main*/
 .platform {
-/* border: 1px solid green;   */
 background: white;
 }
 
 #card {
-/* border: solid 1px black;   */
 margin: 10px;
 padding: 10px;
 background: #f5f5f5;
 } 
 
 #card img {
-  /* border: solid 1px red; */
   width: 100%;
   height: auto;
 }
 
 /*about section*/
 .about {
-  /* border: solid 1px red;   */
   padding: 10px;
   background: #f5f5f5;
 }
@@ -217,63 +138,42 @@ background: #f5f5f5;
   padding-right: 5px;
   padding-left: 5px;
   padding-top: 5px;
-  /* border: 1px solid green;   */
 }
 
 #about-image img {
-  /* border: 1px solid violet;   */
   width: 100%;
   height: auto;
 }
 
 .intro {
-  /* border: solid 1px red;   */
   padding: 10px;
   background: #f5f5f5;
 }
 
 .about1 {
-  /* border: solid 1px red;    */
   padding: 10px;
   background: #f5f5f5;
   }
 
 .about2 {
-  /* border: solid 1px red;   */
   padding: 10px;
   background: white;
   }
 
-  #about-text {
-    /* border: 1px solid yellowgreen;  */
- }
-
 /*Works Section*/
 .works {
-  /* border: solid 1px red;  */
   padding: 10px;
   background: white;
-}
-
-#works-video
-{
-  /* border: 1px solid violet;   */
-}
-
-#works-text {
-  /* border: 1px solid yellowgreen;  */
 }
 
 /*Reviews Section with Carousel*/
 .reviews {
   background: #f5f5f5;
-  /* border: solid 1px red;  */
   padding: 10px;
   text-align: center;
 }
 
 #slideshow-card {
-  /* border: solid 1px black;   */
   padding: 10px;
   background:white;
   margin-bottom: 10px;
@@ -281,7 +181,6 @@ background: #f5f5f5;
 
 #slideshow-card p {
   min-height: 135px;
-  /* border: solid 1px black;    */
 }
 
 .reviews .mySlides {display: none;}
@@ -291,7 +190,6 @@ background: #f5f5f5;
   max-width: 700px;
   position: relative;
   margin: auto;
-  /* border: solid 1px red;  */
 }
 
 /* The dots/bullets/indicators */
@@ -331,11 +229,9 @@ background: #f5f5f5;
 .contact {
   background: #f5f5f5;
   padding: 5px;
-  /* border: solid 1px red;  */
 }
 
 .field {
-  /* border: solid 1px red;  */
   text-align: left;
   margin-bottom: 10px;
 }
@@ -349,7 +245,6 @@ input[type=text] {
 input[type=submit] {
   width: 100%;
   height: 40px;
-  /* border: solid 1px red;  */
   font-size: 26px;
   box-sizing: border-box;
   background-color: #e3963e;
@@ -362,21 +257,12 @@ input[type=submit]:hover {
   background-color: #0a8398;
 }
 
-#name {
-  /* border: solid 1px red; */
-}
-
-#email {
-  /* border: solid 1px red; */
-}
-
 .form {
 padding-bottom: 10px;
 }
     
 /*footer*/
 .footer {
-  /* border: solid 1px red;  */
   text-align: center;
   background:#55c1db;
   color:white;
@@ -432,27 +318,22 @@ padding-bottom: 10px;
 
   .contact h4 {
     font-size: 24px;
-    /* border: solid 1px red;  */
   }
 
   header {
     padding: 20px 0px 100px 0px;
-    /* border: solid 1px red;  */
   }
 
   #logo {
     padding: 0 420px;
-    /* border: solid 1px green; */
   }
     
-  #logo-image{
-    /* border: solid 1px green;  */
+  #logo-image {
     width: 100%;
     height: auto;
   }
 
-  .intro {
-    /* border: solid 1px red; */  
+  .intro {  
     padding: 10px;
     background: #f5f5f5;
   }
@@ -463,7 +344,6 @@ padding-bottom: 10px;
     text-align: left;
     padding-left: 20px; 
     padding-right: 20px; 
-    /* border: solid 1px red;   */
   }
 
   #about-image {
@@ -478,7 +358,6 @@ padding-bottom: 10px;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     min-height: 400px;
-    /* border: solid 1px red;   */
   }
   
   
@@ -488,25 +367,15 @@ padding-bottom: 10px;
     text-align: left;
     padding-left: 20px; 
     padding-right: 20px; 
-    /* border: solid 1px green; */
   }
 
   .reviews {
     background: #f5f5f5;
-    /* border: solid 1px green; */
     padding-bottom: 5px;
-  }
-
-  #slideshow-card {
-  }
-
-  #slideshow-card img{
-    /* border: solid 1px green;  */
   }
 
   #slideshow-card p {
     padding: 10px;
-    /* border: solid 1px green;  */
     min-height: 70px;
   }
 
@@ -550,7 +419,6 @@ padding-bottom: 10px;
   }
 
   .field {
-    /* border: solid 1px green; */
     padding: 0px 20px;
     text-align: left;
   }
@@ -561,19 +429,16 @@ padding-bottom: 10px;
   }
 
   .about1 {
-    /* border: solid 1px red;    */
     padding: 20px;
   }
     
   .about2 {
-    /* border: solid 1px red;   */
     padding: 20px;
   }
  
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: solid 1px red;  */
     padding: 20px 20px;
   }
   
