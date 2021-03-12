@@ -42,6 +42,7 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: 40px;
+  color: #e3963e;
 }
 
 h4 {
@@ -90,6 +91,11 @@ strong {
 #works-text strong {
   font-size: 22px;
   color: #e3963e;
+}
+
+.platform h4 {
+  color: #e3963e;
+  font-weight: bold;
 }
 
 .contact strong {
@@ -384,6 +390,11 @@ padding-bottom: 10px;
     font-weight: normal;
     font-size: 26px;
     line-height: 29px;
+  }
+
+  .platform h4 {
+    color: #e3963e;
+    font-weight: bold;
   }
 
   #intro-text strong {
