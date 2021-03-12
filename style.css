@@ -42,6 +42,7 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: 40px;
+  color: #e3963e
 }
 
 h4 {
@@ -365,6 +366,12 @@ input[type=submit]:hover {
 
 /*media queries*/
 @media (min-width: 769px) {
+
+  h3 {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 29px;
+  }
 
   h4 {
     font-weight: normal;
