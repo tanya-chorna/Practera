@@ -93,11 +93,20 @@ strong {
   color: #e3963e;
 }
 
+.contact strong {
+  font-size: 22px;
+  color: #e3963e;
+}
+
 #about-text h4 {
   font-size: 20px;
 }
 
 #works-text h4 {
+  font-size: 20px;
+}
+
+.contact h4 {
   font-size: 20px;
 }
  
@@ -316,7 +325,7 @@ background: #f5f5f5;
 /*CONTACT Section*/
 .contact {
   background: #f5f5f5;
-  padding: 10px;
+  padding: 5px;
   /* border: solid 1px red;  */
 }
 
@@ -341,10 +350,11 @@ input[type=submit] {
   background-color: #e3963e;
   color: white;
   border: none;
+  margin-top: 15px;
 }
   
 input[type=submit]:hover {
-  background-color: #f7d595;
+  background-color: #0a8398;
 }
 
 #name {
@@ -355,6 +365,10 @@ input[type=submit]:hover {
   /* border: solid 1px red; */
 }
 
+.form {
+padding-bottom: 10px;
+}
+    
 /*footer*/
 .footer {
   /* border: solid 1px red;  */
@@ -398,12 +412,23 @@ input[type=submit]:hover {
     color: #e3963e;
   }
 
+  .contact strong {
+    font-size: 26px;
+    color: #e3963e;
+  }
+
   #about-text h4 {
     font-size: 24px;
+    padding: 0px;
   }
   
   #works-text h4 {
     font-size: 24px;
+  }
+
+  .contact h4 {
+    font-size: 24px;
+    /* border: solid 1px red;  */
   }
 
   header {
@@ -432,14 +457,16 @@ input[type=submit]:hover {
     display: flex;
     align-items: center; 
     text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px; 
+    padding-right: 20px; 
     /* border: solid 1px red;   */
   }
 
   #about-image {
     display: flex;
     align-items: center;
+    padding-left: 20px; 
+    padding-right: 20px; 
   }
 
   .works {
@@ -455,8 +482,9 @@ input[type=submit]:hover {
     display: flex;
     align-items: center; 
     text-align: left;
-    margin-left: 5px; 
-    /* border: solid 1px green;  */
+    padding-left: 20px; 
+    padding-right: 20px; 
+    /* border: solid 1px green; */
   }
 
   .reviews {
@@ -484,11 +512,7 @@ input[type=submit]:hover {
     padding: 20px;
   }
 
-  #about-image img {
-    width: 100%;
-    height: auto;
-  }
-
+  
   .about p {
     text-align: left;
     margin-right: 20px;
@@ -512,12 +536,13 @@ input[type=submit]:hover {
 
   .contact {
     margin: 0px;
-    padding: 20px;
+    padding: 5px;
   }
 
   .form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 30px;
   }
 
   .field {
